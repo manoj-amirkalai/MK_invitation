@@ -514,145 +514,9 @@ export default function WeddingInvitation() {
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
             />
           </div>
-          {/* Family blessings */}
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "100%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            With the heavenly blessings of
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "110%",
-              color: "rgb(243,236,186)",
-              marginTop: 6,
-            }}
-          >
-            Smt. AMIRTHALINGAM &amp; KALAIVANI
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "150%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            ——
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "150%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            Smt. PALLIKONDAN &amp; SUMATHI
-          </p>
-
-          {/* INVITE headline */}
-          <p
-            style={{
-              fontFamily: "'Cormorant Infant', serif",
-              fontSize: 15,
-              lineHeight: "70%",
-              color: "rgb(243,236,186)",
-              marginTop: 40,
-              marginBottom: 28,
-            }}
-          >
-            INVITE
-          </p>
-
-          {/* Sub text */}
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.05em",
-              lineHeight: "100%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            You to join us in the wedding celebrations of
-          </p>
-
-          {/* Large names */}
-          <p
-            style={{
-              fontSize: 15,
-              lineHeight: "190.1%",
-              color: "rgb(14, 116, 119)",
-              marginTop: 4,
-            }}
-          >
-            MANOJ
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              lineHeight: "110%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            &amp;
-          </p>
-          <p
-            style={{
-              fontFamily: "'Cormorant', serif",
-              fontSize: 15,
-              lineHeight: "60.1%",
-              color: "rgb(243,236,186)",
-            }}
-          >
-            KEERTHANA
-          </p>
-
-          {/* Daughter of / On the following events */}
-          <div
-            style={{
-              marginTop: 48,
-              display: "flex",
-              flexDirection: "column",
-              gap: 8,
-            }}
-          >
-            <p
-              style={{
-                fontSize: 15,
-                letterSpacing: "-0.05em",
-                color: "rgb(243,236,186)",
-              }}
-            >
-              Daughter of
-            </p>
-            <p
-              style={{
-                fontSize: 15,
-                letterSpacing: "-0.05em",
-                color: "rgb(243,236,186)",
-              }}
-            >
-              Smt. Parvathi &amp; Shri K. Ramaswamy
-            </p>
-            <p
-              style={{
-                fontSize: 15,
-                letterSpacing: "-0.05em",
-                color: "rgb(243,236,186)",
-                marginTop: 12,
-              }}
-            >
-              On the following events
-            </p>
           </div>
-        </div>
+
+       
         <img
           src={IMG.backgroundImg}
           alt=""
@@ -662,7 +526,7 @@ export default function WeddingInvitation() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "center -120px",
+            objectPosition: "center 20px",
             transform: "scale(1.1)",
             filter: "brightness(0.9)",
             zIndex: 0,
@@ -739,12 +603,168 @@ export default function WeddingInvitation() {
 20    </div> */}
         </section>
       </section>
+      {/* ── Fixed elements ── */}
+      <MusicButton />
+      {/* <BuyNowButton /> */}
+
+      {/* ════════════════════════════════════════════
+          INVITE BLOCK – dark temple background
+      ════════════════════════════════════════════ */}
+       <div style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 8,
+        padding: "20px 28px",  
+        background: "#646260ab",
+       }}>
+          {/* Om */}
+         
+          {/* Family blessings */}
+          <p
+            style={{
+              fontSize: 15,
+              letterSpacing: "-0.03em",
+              lineHeight: "100%",
+                color: 'black' ,
+            }}
+          >
+            With the heavenly blessings of
+          </p>
+          <p
+            style={{
+              fontSize: 15,
+              letterSpacing: "-0.03em",
+              lineHeight: "110%",
+                color: 'black' ,
+              marginTop: 6,
+            }}
+          >
+            Smt. AMIRTHALINGAM &amp; KALAIVANI
+          </p>
+          <p
+            style={{
+              fontSize: 15,
+              letterSpacing: "-0.03em",
+              lineHeight: "150%",
+                color: 'black' ,
+            }}
+          >
+            ——
+          </p>
+          <p
+            style={{
+              fontSize: 15,
+              letterSpacing: "-0.03em",
+              lineHeight: "150%",
+                color: 'black' ,
+            }}
+          >
+            Smt. PALLIKONDAN &amp; SUMATHI
+          </p>
+
+          {/* INVITE headline */}
+          <p
+            style={{
+              fontFamily: "'Cormorant Infant', serif",
+              fontSize: 15,
+              lineHeight: "70%",
+                color: 'black' ,
+              marginTop: 40,
+              marginBottom: 28,
+            }}
+          >
+            INVITE
+          </p>
+
+          {/* Sub text */}
+          <p
+            style={{
+              fontSize: 15,
+              letterSpacing: "-0.05em",
+              lineHeight: "100%",
+                color: 'black' ,
+            }}
+          >
+            You to join us in the wedding celebrations of
+          </p>
+
+          {/* Large names */}
+          <p
+            style={{
+              fontSize: 15,
+              lineHeight: "190.1%",
+                color: 'black' ,
+              marginTop: 4,
+            }}
+          >
+            MANOJ
+          </p>
+          <p
+            style={{
+              fontSize: 15,
+              lineHeight: "110%",
+                color: 'black' ,
+            }}
+          >
+            &amp;
+          </p>
+          <p
+            style={{
+              fontFamily: "'Cormorant', serif",
+              fontSize: 15,
+              lineHeight: "60.1%",
+                color: 'black' ,
+            }}
+          >
+            KEERTHANA
+          </p>
+
+          {/* Daughter of / On the following events */}
+          <div
+            style={{
+              marginTop: 48,
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+            }}
+          >
+            <p
+              style={{
+                fontSize: 15,
+                letterSpacing: "-0.05em",
+                color: 'black' ,
+              }}
+            >
+              Daughter of
+            </p>
+            <p
+              style={{
+                fontSize: 15,
+                letterSpacing: "-0.05em",
+                color: 'black' ,
+              }}
+            >
+              Smt. Parvathi &amp; Shri K. Ramaswamy
+            </p>
+            <p
+              style={{
+                fontSize: 15,
+                letterSpacing: "-0.05em",
+                color: 'black' ,
+                marginTop: 12,
+              }}
+            >
+              On the following events
+            </p>
+          </div>
+        </div>
       {/* ════════════════════════════════════════════
           COUNTDOWN
       ════════════════════════════════════════════ */}
       <section
         style={{
-          marginTop: -70,
+          marginTop: 0,
           background: "rgb(211, 210, 204)",
           padding: "60px 24px",
           textAlign: "center",
