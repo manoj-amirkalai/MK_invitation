@@ -69,12 +69,7 @@ const THINGS = [
     icon: IMG.weatherIcon,
     title: "Weather",
     desc: "It will be mostly sunny with temperature reaching up to 28 degrees at the venue",
-  },
-  {
-    icon: IMG.parkingIcon,
-    title: "Parking",
-    desc: "Valet parking for all our guests will be available at the venue",
-  },
+  }
 ];
 
 // ─── Hook: countdown ──────────────────────────────────────────────────────────
@@ -192,7 +187,7 @@ function BuyNowButton() {
           style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 600,
-            fontSize: 20,
+            fontSize: 15,
             letterSpacing: "-0.02em",
             color: "#222",
           }}
@@ -317,7 +312,7 @@ function EventCard({ event }) {
         <p
           style={{
             fontFamily: "'Aboreto', sans-serif",
-            fontSize: 20,
+            fontSize: 15,
             lineHeight: "150%",
             color: "rgb(69,160,134)",
             margin: 0,
@@ -328,7 +323,7 @@ function EventCard({ event }) {
         <p
           style={{
             fontFamily: "'Cormorant', serif",
-            fontSize: 20,
+            fontSize: 15,
             lineHeight: "100%",
             color: "rgb(69,160,134)",
             margin: 0,
@@ -339,7 +334,7 @@ function EventCard({ event }) {
         <p
           style={{
             fontFamily: "'Cormorant', serif",
-            fontSize: 20,
+            fontSize: 15,
             lineHeight: "100%",
             color: "rgb(69,160,134)",
             margin: 0,
@@ -350,7 +345,7 @@ function EventCard({ event }) {
         <p
           style={{
             fontFamily: "'Cormorant', serif",
-            fontSize: 20,
+            fontSize: 15,
             lineHeight: "100%",
             color: "rgb(69,160,134)",
             margin: 0,
@@ -359,13 +354,13 @@ function EventCard({ event }) {
           {event.time}
         </p>
         <a
-          href="https://maps.google.com"
+          href="https://maps.app.goo.gl/3rP3EZKLh6GZ5xZU7"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             fontFamily: "'Cormorant', serif",
             fontWeight: 700,
-            fontSize: 20,
+            fontSize: 15,
             color: "rgb(230,211,255)",
             marginTop: 4,
           }}
@@ -427,7 +422,7 @@ function CountdownUnit({ value, label }) {
       <p
         style={{
           fontWeight: 500,
-          fontSize: 20,
+          fontSize: 15,
           lineHeight: "1em",
 
           color: "rgb(10, 82, 163)",
@@ -441,7 +436,7 @@ function CountdownUnit({ value, label }) {
       <p
         style={{
           fontFamily: "'Yaldevi', sans-serif",
-          fontSize: 20,
+          fontSize: 15,
 
           color: "rgb(10, 82, 163)",
           margin: 0,
@@ -502,7 +497,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Gotu', sans-serif",
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "10%",
               color: "rgb(243,236,186)",
               marginBottom: 12,
@@ -522,7 +517,7 @@ export default function WeddingInvitation() {
           {/* Family blessings */}
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               letterSpacing: "-0.03em",
               lineHeight: "100%",
               color: "rgb(243,236,186)",
@@ -532,7 +527,7 @@ export default function WeddingInvitation() {
           </p>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               letterSpacing: "-0.03em",
               lineHeight: "110%",
               color: "rgb(243,236,186)",
@@ -543,7 +538,7 @@ export default function WeddingInvitation() {
           </p>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               letterSpacing: "-0.03em",
               lineHeight: "150%",
               color: "rgb(243,236,186)",
@@ -553,7 +548,7 @@ export default function WeddingInvitation() {
           </p>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               letterSpacing: "-0.03em",
               lineHeight: "150%",
               color: "rgb(243,236,186)",
@@ -566,7 +561,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Cormorant Infant', serif",
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "70%",
               color: "rgb(243,236,186)",
               marginTop: 40,
@@ -579,7 +574,7 @@ export default function WeddingInvitation() {
           {/* Sub text */}
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               letterSpacing: "-0.05em",
               lineHeight: "100%",
               color: "rgb(243,236,186)",
@@ -591,7 +586,7 @@ export default function WeddingInvitation() {
           {/* Large names */}
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "190.1%",
               color: "rgb(14, 116, 119)",
               marginTop: 4,
@@ -601,7 +596,7 @@ export default function WeddingInvitation() {
           </p>
           <p
             style={{
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "110%",
               color: "rgb(243,236,186)",
             }}
@@ -611,7 +606,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Cormorant', serif",
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "60.1%",
               color: "rgb(243,236,186)",
             }}
@@ -630,7 +625,7 @@ export default function WeddingInvitation() {
           >
             <p
               style={{
-                fontSize: 20,
+                fontSize: 15,
                 letterSpacing: "-0.05em",
                 color: "rgb(243,236,186)",
               }}
@@ -639,7 +634,7 @@ export default function WeddingInvitation() {
             </p>
             <p
               style={{
-                fontSize: 20,
+                fontSize: 15,
                 letterSpacing: "-0.05em",
                 color: "rgb(243,236,186)",
               }}
@@ -648,7 +643,7 @@ export default function WeddingInvitation() {
             </p>
             <p
               style={{
-                fontSize: 20,
+                fontSize: 15,
                 letterSpacing: "-0.05em",
                 color: "rgb(243,236,186)",
                 marginTop: 12,
@@ -877,7 +872,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Aboreto', sans-serif",
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "115.74%",
               color: "rgb(220,221,166)",
             }}
@@ -887,14 +882,14 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Yaldevi', sans-serif",
-              fontSize: 20,
+              fontSize: 15,
               color: "rgb(218,220,163)",
             }}
           >
             Click to open the map
           </p>
           <a
-            href="https://missingpiecevites.com"
+            href="https://maps.app.goo.gl/3rP3EZKLh6GZ5xZU7"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open map"
@@ -956,7 +951,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Aboreto', sans-serif",
-              fontSize: 20,
+              fontSize: 15,
               lineHeight: "115.74%",
               color: "rgb(251,237,226)",
             }}
@@ -968,7 +963,7 @@ export default function WeddingInvitation() {
           <p
             style={{
               fontFamily: "'Yaldevi', sans-serif",
-              fontSize: 20,
+              fontSize: 15,
               color: "rgb(251,237,226)",
               marginTop: 12,
             }}
@@ -988,7 +983,7 @@ export default function WeddingInvitation() {
               color: "#fff",
               fontFamily: "'Manrope', sans-serif",
               fontWeight: 600,
-              fontSize: 20,
+              fontSize: 15,
               padding: "12px 28px",
               borderRadius: 40,
               textDecoration: "none",
@@ -1021,9 +1016,9 @@ export default function WeddingInvitation() {
         <p
           style={{
             fontFamily: "'Aboreto', sans-serif",
-            fontSize: 20,
+            fontSize: 15,
             textAlign: "center",
-            color: "rgb(105,107,54)",
+          color: "rgb(7, 52, 94)",
           }}
         >
           Things to know
@@ -1031,9 +1026,9 @@ export default function WeddingInvitation() {
         <p
           style={{
             fontFamily: "'Yaldevi', sans-serif",
-            fontSize: 20,
+            fontSize: 15,
             textAlign: "center",
-            color: "rgb(105,107,54)",
+          color: "rgb(7, 52, 94)",
             lineHeight: 1.6,
             maxWidth: 360,
           }}
@@ -1079,7 +1074,7 @@ export default function WeddingInvitation() {
         <p
           style={{
             fontFamily: "'Aboreto', sans-serif",
-            fontSize: 20,
+            fontSize: 15,
             lineHeight: "115.74%",
             color: "rgb(243,236,186)",
           }}
@@ -1091,7 +1086,7 @@ export default function WeddingInvitation() {
         <p
           style={{
             fontFamily: "'Yaldevi', sans-serif",
-            fontSize: 20,
+            fontSize: 15,
             color: "rgb(243,236,186)",
           }}
         >
@@ -1110,7 +1105,7 @@ export default function WeddingInvitation() {
             color: "#fff",
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 600,
-            fontSize: 20,
+            fontSize: 15,
             padding: "12px 28px",
             borderRadius: 40,
             textDecoration: "none",
@@ -1158,7 +1153,7 @@ export default function WeddingInvitation() {
             position: "relative",
             zIndex: 1,
 
-            fontSize: 20,
+            fontSize: 15,
 
             color: "rgb(10, 82, 163)",
             textAlign: "center",
