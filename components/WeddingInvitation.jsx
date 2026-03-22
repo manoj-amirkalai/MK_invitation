@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import templeImg from "../src/assets/temple.jpg";
+import weddingimg from "../src/assets/wedding.webp";
+import receptionimg from "../src/assets/reception.jpg";
 import WeddingDateReveal from "./WeddingDateReveal";
 import data from "../public/manifest.json";
 
@@ -38,6 +40,8 @@ const IMG = {
     "https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg",
   sectionBg:
     "https://framerusercontent.com/images/CxMq9eNVYFWeipRkOH7L6BF7EV4.png?width=1350&height=3716",
+  reception : receptionimg,
+  wedding : weddingimg
 };
 
 const AUDIO_SRC =
@@ -50,12 +54,14 @@ const EVENTS = [
     date: "Saturday, Sep 12th 2026",
     venue: "K.Pudhur, Perambalur",
     time: "2pm Onwards",
+    img : IMG.reception
   },
   {
     name: "Muhurtham",
     date: "Sunday, Sep 13th 2026",
     venue: "Perambalur",
     time: "8am Onwards",
+    img : IMG.wedding
   },
 ];
 
@@ -263,7 +269,7 @@ function EventCard({ event }) {
         }}
       >
         <img
-          src={IMG.cane}
+          src={event.img}
           alt=""
           style={{
             position: "absolute",
@@ -283,11 +289,11 @@ function EventCard({ event }) {
             width: "80%",
           }}
         >
-          <img
+          {/* <img
             src={IMG.flower1}
             alt=""
             style={{ width: "100%", objectFit: "contain" }}
-          />
+          /> */}
         </div>
       </div>
 
@@ -616,9 +622,9 @@ export default function WeddingInvitation() {
         alignItems: "center",
         gap: 8,
         padding: "20px 28px",  
-        backgroundImage: `url(${IMG.cane})`,
+        backgroundImage: `url(${IMG.mobileFooter})`,
         backgroundSize: "fit",
-        backgroundPosition: "center",
+        backgroundPosition: "center -1050px",
        }}>
           {/* Om */}
          
