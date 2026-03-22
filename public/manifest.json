@@ -24,5 +24,6 @@
       "description": "Get directions to the venue"
     }
   ],
-  "categories": ["lifestyle", "social"]
+  "categories": ["lifestyle", "social"],
+  "date" : "2026-09-13T06:00:00"
 }
