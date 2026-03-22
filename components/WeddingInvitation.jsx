@@ -41,8 +41,8 @@ const IMG = {
     "https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg",
   sectionBg:
     "https://framerusercontent.com/images/CxMq9eNVYFWeipRkOH7L6BF7EV4.png?width=1350&height=3716",
-  reception : receptionimg,
-  wedding : weddingimg
+  reception: receptionimg,
+  wedding: weddingimg,
 };
 
 const AUDIO_SRC = audio_bgm;
@@ -54,14 +54,14 @@ const EVENTS = [
     date: "Saturday, Sep 12th 2026",
     venue: "K.Pudhur, Perambalur",
     time: "2pm Onwards",
-    img : IMG.reception
+    img: IMG.reception,
   },
   {
     name: "Muhurtham",
     date: "Sunday, Sep 13th 2026",
     venue: "Perambalur",
     time: "8am Onwards",
-    img : IMG.wedding
+    img: IMG.wedding,
   },
 ];
 
@@ -75,7 +75,7 @@ const THINGS = [
     icon: IMG.weatherIcon,
     title: "Weather",
     desc: "It will be mostly sunny with temperature reaching up to 28 degrees at the venue",
-  }
+  },
 ];
 
 // ─── Hook: countdown ──────────────────────────────────────────────────────────
@@ -520,9 +520,8 @@ export default function WeddingInvitation() {
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
             />
           </div>
-          </div>
+        </div>
 
-       
         <img
           src={IMG.backgroundImg}
           alt=""
@@ -616,151 +615,153 @@ export default function WeddingInvitation() {
       {/* ════════════════════════════════════════════
           INVITE BLOCK – dark temple background
       ════════════════════════════════════════════ */}
-       <div style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 8,
-        padding: "20px 28px",  
-        backgroundImage: `url(${IMG.mobileFooter})`,
-        backgroundSize: "fit",
-        backgroundPosition: "center -1050px",
-        backgroundRepeat: "no-repeat",
-       }}>
-          {/* Om */}
-         
-          {/* Family blessings */}
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "100%",
-                color: 'black' ,
-                fontWeight: 500,
-                textShadow: "0 0 3px rgb(236, 236, 236)",
-                background: "rgba(255, 255, 255, 0.82)",
-            }}
-          >
-            With the heavenly blessings of
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "110%",
-                color: 'black' ,
-              marginTop: 6,
-                background: "rgba(255, 255, 255, 0.82)",
-            }}
-          >
-            Smt. AMIRTHALINGAM &amp; KALAIVANI
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "150%",
-                color: 'black' ,
-            }}
-          >
-            ——
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.03em",
-              lineHeight: "150%",
-                background: "rgba(255, 255, 255, 0.82)",
-                color: 'black' ,
-            }}
-          >
-            Smt. PALLIKONDAN &amp; SUMATHI
-          </p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 8,
+          padding: "20px 28px",
+          backgroundImage: `url(${IMG.mobileFooter})`,
+          backgroundSize: "fit",
+          backgroundPosition: "center -1050px",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Om */}
 
-          {/* INVITE headline */}
-          <p
-            style={{
-              fontFamily: "'Cormorant Infant', serif",
-              fontSize: 15,
-              lineHeight: "70%",
-                color: 'black' ,
-              marginTop: 10,
-              marginBottom: 18,
-                background: "rgba(255, 255, 255, 0.82)",
-            }}
-          >
-            INVITE
-          </p>
+        {/* Family blessings */}
+        <p
+          style={{
+            fontSize: 15,
+            letterSpacing: "-0.03em",
+            lineHeight: "100%",
+            color: "black",
+            fontWeight: 500,
+            textShadow: "0 0 3px rgb(236, 236, 236)",
+            background: "rgba(255, 255, 255, 0.82)",
+          }}
+        >
+          With the heavenly blessings of
+        </p>
+        <p
+          style={{
+            fontSize: 15,
+            letterSpacing: "-0.03em",
+            lineHeight: "110%",
+            color: "black",
+            marginTop: 6,
+            background: "rgba(255, 255, 255, 0.82)",
+          }}
+        >
+          Smt. AMIRTHALINGAM &amp; KALAIVANI
+        </p>
+        <p
+          style={{
+            fontSize: 15,
+            letterSpacing: "-0.03em",
+            lineHeight: "150%",
+            color: "black",
+          }}
+        >
+          ——
+        </p>
+        <p
+          style={{
+            fontSize: 15,
+            letterSpacing: "-0.03em",
+            lineHeight: "150%",
+            background: "rgba(255, 255, 255, 0.82)",
+            color: "black",
+          }}
+        >
+          Smt. PALLIKONDAN &amp; SUMATHI
+        </p>
 
-          {/* Sub text */}
+        {/* INVITE headline */}
+        <p
+          style={{
+            fontFamily: "'Cormorant Infant', serif",
+            fontSize: 15,
+            lineHeight: "70%",
+            color: "black",
+            marginTop: 10,
+            marginBottom: 18,
+            background: "rgba(255, 255, 255, 0.82)",
+          }}
+        >
+          INVITE
+        </p>
+
+        {/* Sub text */}
+        <p
+          style={{
+            fontSize: 15,
+            letterSpacing: "-0.05em",
+            background: "rgba(255, 255, 255, 0.82)",
+            lineHeight: "100%",
+            color: "black",
+          }}
+        >
+          You to join us in the wedding celebrations of
+        </p>
+
+        {/* Large names */}
+        <p
+          style={{
+            fontSize: 15,
+            background: "rgba(255, 255, 255, 0.82)",
+            lineHeight: "190.1%",
+            color: "black",
+            marginTop: 4,
+          }}
+        >
+          MANOJ
+        </p>
+        <p
+          style={{
+            fontSize: 15,
+            background: "rgba(255, 255, 255, 0.82)",
+            lineHeight: "110%",
+            color: "black",
+          }}
+        >
+          &amp;
+        </p>
+        <p
+          style={{
+            fontFamily: "'Cormorant', serif",
+            background: "rgba(255, 255, 255, 0.82)",
+            fontSize: 15,
+            lineHeight: "110%",
+            color: "black",
+          }}
+        >
+          KEERTHANA
+        </p>
+
+        {/* Daughter of / On the following events */}
+        <div
+          style={{
+            marginTop: 18,
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+          }}
+        >
           <p
             style={{
               fontSize: 15,
               letterSpacing: "-0.05em",
-                background: "rgba(255, 255, 255, 0.82)",
-              lineHeight: "100%",
-                color: 'black' ,
+              color: "black",
+              background: "rgba(255, 255, 255, 0.82)",
+              marginTop: 12,
             }}
           >
-            You to join us in the wedding celebrations of
+            On the following events
           </p>
-
-          {/* Large names */}
-          <p
-            style={{
-              fontSize: 15,
-                background: "rgba(255, 255, 255, 0.82)",
-              lineHeight: "190.1%",
-                color: 'black' ,
-              marginTop: 4,
-            }}
-          >
-            MANOJ
-          </p>
-          <p
-            style={{
-              fontSize: 15,
-                background: "rgba(255, 255, 255, 0.82)",
-              lineHeight: "110%",
-                color: 'black' ,
-            }}
-          >
-            &amp;
-          </p>
-          <p
-            style={{
-              fontFamily: "'Cormorant', serif",
-                background: "rgba(255, 255, 255, 0.82)",
-              fontSize: 15,
-              lineHeight: "110%",
-                color: 'black' ,
-            }}
-          >
-            KEERTHANA
-          </p>
-
-          {/* Daughter of / On the following events */}
-          <div
-            style={{
-              marginTop: 18,
-              display: "flex",
-              flexDirection: "column",
-              gap: 8,
-            }}
-          >
-            <p
-              style={{
-                fontSize: 15,
-                letterSpacing: "-0.05em",
-                color: 'black' ,
-                background: "rgba(255, 255, 255, 0.82)",
-                marginTop: 12,
-              }}
-            >
-              On the following events
-            </p>
-          </div>
         </div>
+      </div>
       {/* ════════════════════════════════════════════
           COUNTDOWN
       ════════════════════════════════════════════ */}
@@ -1040,7 +1041,7 @@ export default function WeddingInvitation() {
             fontFamily: "'Aboreto', sans-serif",
             fontSize: 15,
             textAlign: "center",
-          color: "rgb(7, 52, 94)",
+            color: "rgb(7, 52, 94)",
           }}
         >
           Things to know
@@ -1050,7 +1051,7 @@ export default function WeddingInvitation() {
             fontFamily: "'Yaldevi', sans-serif",
             fontSize: 15,
             textAlign: "center",
-          color: "rgb(7, 52, 94)",
+            color: "rgb(7, 52, 94)",
             lineHeight: 1.6,
             maxWidth: 360,
           }}
