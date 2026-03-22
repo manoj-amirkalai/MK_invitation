@@ -4,6 +4,7 @@ import weddingimg from "../src/assets/wedding.png";
 import receptionimg from "../src/assets/reception.png";
 import WeddingDateReveal from "./WeddingDateReveal";
 import data from "../public/manifest.json";
+import audio_bgm from "../src/assets/TheriLoveBgm.mp3";
 
 // ─── Image & Asset URLs (from original HTML) ─────────────────────────────────
 const IMG = {
@@ -44,8 +45,7 @@ const IMG = {
   wedding : weddingimg
 };
 
-const AUDIO_SRC =
-  "../src/assets/TheriLoveBgm.mp3";
+const AUDIO_SRC = audio_bgm;
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const EVENTS = [
