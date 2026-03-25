@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import PILLAR_B64 from "../../src/assets/templebg.avif";
 import TEMPLE_B64 from "../../src/assets/temple3d.png";
+import coconut from "../../src/assets/coconut.png";
 import WeddingInvitation from "../WeddingInvitation";
 import WeddingDateReveal from "../WeddingDateReveal";
 import data from "../../public/manifest.json";
@@ -76,82 +77,29 @@ function useCountdown(targetDateStr) {
 
   return (
     <div style={{ backgroundColor: "#fff", overflow: "hidden" }}>
-      {/* 1. MAIN WRAPPER */}   <section
-        style={{
-          marginTop: 0,
-          background: "rgb(211, 210, 204)",
-          padding: "60px 24px",
-          textAlign: "center",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 16,
-        }}
-      >
-        <p
-          style={{
-            fontSize: 15,
-            lineHeight: "100.1%",
-            color: "rgb(10, 82, 163)",
-          }}
-        >
-          The countdown begins
-        </p>
-
-        <WeddingDateReveal />
-        {/* Timer */}
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
-          <CountdownUnit value={countdown.d} label="Days" />
-          <span
-            style={{
-              fontSize: 15,
-              color: "rgb(10, 82, 163)",
-              lineHeight: "1em",
-              fontVariantNumeric: "tabular-nums",
-            }}
-          >
-            :
-          </span>
-          <CountdownUnit value={countdown.h} label="Hours" />
-          <span
-            style={{
-              fontSize: 15,
-              color: "rgb(10, 82, 163)",
-              lineHeight: "1em",
-              fontVariantNumeric: "tabular-nums",
-            }}
-          >
-            :
-          </span>
-          <CountdownUnit value={countdown.m} label="Mins" />
-          <span
-            style={{
-              fontSize: 15,
-
-              color: "rgb(10, 82, 163)",
-              lineHeight: "1em",
-              fontVariantNumeric: "tabular-nums",
-            }}
-          >
-            :
-          </span>
-          <CountdownUnit value={countdown.s} label="Secs" />
-        </div>
-
-        <p
-          style={{
-            fontSize: 15,
-            textAlign: "center",
-
-            color: "rgb(10, 82, 163)",
-            maxWidth: 300,
-            lineHeight: 1.6,
-          }}
-        >
-          Our families are excited that you are able to join us in celebrating
-          what we hope will be one of the happiest days of our lives.
-        </p>
-      </section>
+      {/* 1. MAIN WRAPPER */}   
+   <div 
+  style={{
+    width: "100%",           // Container width
+    display: "flex",         // Now flex works on the div
+    justifyContent: "center", // Centers the coconut
+    alignItems: "center",
+    backgroundImage: `url(${PILLAR_B64})`, // Use the imported variable
+    backgroundSize: "fit",
+    backgroundPosition: "center 0px",
+    padding: "20px"          // Space around the coconut
+  }}
+>
+  <img 
+    src={coconut}        // Your coconut image path
+    alt="coconut"
+    style={{
+      width: "50%",          // Coconut size relative to the div
+      display: "block",
+      margin: "0 auto"        // Center the coconut
+    }} 
+  />
+</div>
       <div style={{ 
         position: "relative", 
         width: "480px", 
