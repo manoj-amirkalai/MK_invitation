@@ -7,6 +7,7 @@ import data from "../public/manifest.json";
 import audio_bgm from "../src/assets/TheriLoveBgm.mp3";
 import templeImgbg from "../src/assets/templebg.avif";
 import temple3dImg from "../src/assets/temple3d.png";
+import TempleHeader from "./HeaderPage/HeaderPage";
 
 // ─── Image & Asset URLs (from original HTML) ─────────────────────────────────
 const IMG = {
@@ -469,7 +470,7 @@ export default function WeddingInvitation() {
       style={{
         fontFamily: "'Gotu', sans-serif",
         background: "#1b1a1a",
-        maxWidth: 1280,
+        maxWidth: 480,
         margin: "0 auto",
         position: "relative",
         overflowX: "hidden",
@@ -491,9 +492,6 @@ export default function WeddingInvitation() {
       ════════════════════════════════════════════ */}
       <section
         style={{
-          position: "relative",
-          background: "#130e0600",
-          padding: "60px 28px",
           textAlign: "center",
           display: "flex",
           flexDirection: "column",
@@ -502,115 +500,8 @@ export default function WeddingInvitation() {
           overflow: "hidden",
         }}
       >
-        <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
-          {/* Om */}
-          <p
-            style={{
-              fontFamily: "'Gotu', sans-serif",
-              fontSize: 15,
-              lineHeight: "10%",
-              color: "rgb(243,236,186)",
-              marginBottom: 12,
-            }}
-          >
-            ॐ
-          </p>
 
-          {/* Ganesha image */}
-          <div style={{ width: 130, height: 130, margin: "0 auto 18px" }}>
-            <img
-              src={IMG.ganesha}
-              alt="Ganesha"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
-            />
-          </div>
-        </div>
-
-        <img
-          src={IMG.temple3dbg}
-          alt=""
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center 20px",
-            transform: "scale(1.1)",
-            filter: "brightness(0.9)",
-            zIndex: 0,
-          }}
-        />
-
-        {/* ════════════════════════════════════════════
-          HERO – sky background + lanterns + names
-      ════════════════════════════════════════════ */}
-        <section
-          style={{
-            position: "relative",
-            width: "100%",
-            minHeight: 760,
-            overflow: "hidden",
-          }}
-        >
-          {/* Full bleed background */}
-          <img
-            src={IMG.temple3d}
-            alt=""
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "center 200px",
-              zIndex: 0,
-            }}
-          />
-
-          {/* Lanterns – left side */}
-          {/* <Lantern style={{ top: -10, left: -15, width: 85, height: 138, zIndex: 1 }} />
-        <Lantern style={{ top: 30, left: 50, width: 58, height: 94, zIndex: 1 }} />
-        <Lantern style={{ top: 100, left: 14, width: 35, height: 57, zIndex: 1 }} />
-        <Lantern style={{ top: 160, left: 30, width: 28, height: 45, zIndex: 1 }} /> */}
-
-          {/* Lanterns – right side (mirrored) */}
-          {/* <Lantern style={{ top: -5, right: 10, width: 72, height: 117, zIndex: 1, transform: "scaleX(-1)" }} />
-        <Lantern style={{ top: 40, right: 45, width: 43, height: 70, zIndex: 1, transform: "scaleX(-1)" }} />
-        <Lantern style={{ top: 120, right: 8, width: 33, height: 53, zIndex: 1, transform: "scaleX(-1)" }} /> */}
-
-          {/* Names – MANOJ WEDS KEERTHANA */}
-          {/* <div style={{
-          position: "relative", zIndex: 2,
-          display: "flex", flexDirection: "column",
-          alignItems: "center", justifyContent: "center",
-          paddingTop: 200, paddingBottom: 80,
-          textAlign: "center",
-        }}>
-          <h3 style={{
-            
-            fontSize: 72, lineHeight: 1,
-            color: "rgba(189, 180, 115, 0.69)",
-          }}>
-            MANOJ
-          </h3>
-          <h2 style={{
-            fontFamily: "'Cormorant', serif",
-            fontSize: 36, letterSpacing: "0.42em",
-            lineHeight: "60px", color: "rgb(134, 123, 16)",
-            margin: "6px 0",
-          }}>
-            WEDS
-          </h2>
-          <h3 style={{
-            
-            fontSize: 72, lineHeight: 1,
-            color: "rgb(175, 157, 19)",
-          }}>
-            KEERTHANA
-          </h3>
-20    </div> */}
-        </section>
+     {/* <TempleHeader/> */}
       </section>
       {/* ── Fixed elements ── */}
       <MusicButton />
@@ -619,153 +510,7 @@ export default function WeddingInvitation() {
       {/* ════════════════════════════════════════════
           INVITE BLOCK – dark temple background
       ════════════════════════════════════════════ */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 8,
-          padding: "20px 28px",
-          backgroundImage: `url(${IMG.mobileFooter})`,
-          backgroundSize: "fit",
-          backgroundPosition: "center -1050px",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* Om */}
-
-        {/* Family blessings */}
-        <p
-          style={{
-            fontSize: 15,
-            letterSpacing: "-0.03em",
-            lineHeight: "100%",
-            color: "black",
-            fontWeight: 500,
-            textShadow: "0 0 3px rgb(236, 236, 236)",
-            background: "rgba(255, 255, 255, 0.82)",
-          }}
-        >
-          With the heavenly blessings of
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            letterSpacing: "-0.03em",
-            lineHeight: "110%",
-            color: "black",
-            marginTop: 6,
-            background: "rgba(255, 255, 255, 0.82)",
-          }}
-        >
-          Smt. AMIRTHALINGAM &amp; KALAIVANI
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            letterSpacing: "-0.03em",
-            lineHeight: "150%",
-            color: "black",
-          }}
-        >
-          ——
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            letterSpacing: "-0.03em",
-            lineHeight: "150%",
-            background: "rgba(255, 255, 255, 0.82)",
-            color: "black",
-          }}
-        >
-          Smt. PALLIKONDAN &amp; SUMATHI
-        </p>
-
-        {/* INVITE headline */}
-        <p
-          style={{
-            fontFamily: "'Cormorant Infant', serif",
-            fontSize: 15,
-            lineHeight: "70%",
-            color: "black",
-            marginTop: 10,
-            marginBottom: 18,
-            background: "rgba(255, 255, 255, 0.82)",
-          }}
-        >
-          INVITE
-        </p>
-
-        {/* Sub text */}
-        <p
-          style={{
-            fontSize: 15,
-            letterSpacing: "-0.05em",
-            background: "rgba(255, 255, 255, 0.82)",
-            lineHeight: "100%",
-            color: "black",
-          }}
-        >
-          You to join us in the wedding celebrations of
-        </p>
-
-        {/* Large names */}
-        <p
-          style={{
-            fontSize: 15,
-            background: "rgba(255, 255, 255, 0.82)",
-            lineHeight: "190.1%",
-            color: "black",
-            marginTop: 4,
-          }}
-        >
-          MANOJ
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            background: "rgba(255, 255, 255, 0.82)",
-            lineHeight: "110%",
-            color: "black",
-          }}
-        >
-          &amp;
-        </p>
-        <p
-          style={{
-            fontFamily: "'Cormorant', serif",
-            background: "rgba(255, 255, 255, 0.82)",
-            fontSize: 15,
-            lineHeight: "110%",
-            color: "black",
-          }}
-        >
-          KEERTHANA
-        </p>
-
-        {/* Daughter of / On the following events */}
-        <div
-          style={{
-            marginTop: 18,
-            display: "flex",
-            flexDirection: "column",
-            gap: 8,
-          }}
-        >
-          <p
-            style={{
-              fontSize: 15,
-              letterSpacing: "-0.05em",
-              color: "black",
-              background: "rgba(255, 255, 255, 0.82)",
-              marginTop: 12,
-            }}
-          >
-            On the following events
-          </p>
-        </div>
-      </div>
+      
       {/* ════════════════════════════════════════════
           COUNTDOWN
       ════════════════════════════════════════════ */}
