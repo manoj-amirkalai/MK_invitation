@@ -70,10 +70,10 @@ function useCountdown(targetDateStr) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const HEADER_H = 850;
+  const HEADER_H = 900;
   const pillarMoveUp = scrollY * 0.6;
   const templeRise = scrollY * 0;
-  const templeInitialTop = HEADER_H * 0.35;
+  const templeInitialTop = HEADER_H * 0.5;
 
   return (
     <div style={{ backgroundColor: "#fff", overflow: "hidden" }}>
