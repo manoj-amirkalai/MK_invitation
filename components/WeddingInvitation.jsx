@@ -469,7 +469,7 @@ export default function WeddingInvitation() {
       style={{
         fontFamily: "'Gotu', sans-serif",
         background: "#1b1a1a",
-        maxWidth: 480,
+        maxWidth: 1280,
         margin: "0 auto",
         position: "relative",
         overflowX: "hidden",
