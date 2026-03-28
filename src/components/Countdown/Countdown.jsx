@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import data from "../../manifest.json";
 import WeddingDateReveal from '../Countdown/WeddingDateReveal';
+import inviteBg from "../../assets/invitaionbg.avif";
 
 const Countdown = () => {
   const countdown = useCountdown(new Date(data.date).getTime());
@@ -61,7 +62,7 @@ const Countdown = () => {
         style={{
           width: "90%",
           marginTop: 0,
-          backgroundImage: `url(${"../src/assets/invitaionbg.avif"})`,
+          backgroundImage: `url(${inviteBg})`,
           backgroundPosition: "center",
           padding: "60px 24px",
           textAlign: "center",
