@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PILLAR_B64 from "../../assets/templebg.avif";
 import TEMPLE_B64 from "../../assets/temple3d.png";
+import templeBg from "../../assets/templebg.avif";
 
 
 
@@ -14,10 +15,10 @@ export default function Temple() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const HEADER_H = 950;
+  const HEADER_H = 850;
   const pillarMoveUp = scrollY * 0.6;
   const templeRise = scrollY * 0;
-  const templeInitialTop = HEADER_H * 0.25;
+  const templeInitialTop = HEADER_H * 0.3;
 
   return (
     <div style={{ backgroundColor: "#fff", overflow: "hidden" ,width: 480}}>
@@ -39,9 +40,9 @@ export default function Temple() {
           height: `${HEADER_H}px`,
           overflow: "hidden",
           zIndex: 10,
-          backgroundImage: `url(${"../src/assets/invitaionbg.avif"})`,
+          backgroundImage: `url(${templeBg})`,
           backgroundPosition: "center",
-          marginBottom: `-${HEADER_H+200}px`, // PULLS content up to align with sticky
+          marginBottom: `-${HEADER_H+55}px`, // PULLS content up to align with sticky
         }}>
           {/* BACKGROUND PILLARS */}
           <div style={{

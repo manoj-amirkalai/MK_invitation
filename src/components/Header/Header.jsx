@@ -7,7 +7,8 @@ const Header = () => {
   return (
     <div
       style={{
-        width: 440,// Container width
+        width: 440,
+        minHeight: '60vh',// Container width
         display: "flex", // Now flex works on the div
         justifyContent: "center", // Centers the coconut
         alignItems: "center",
@@ -17,7 +18,7 @@ const Header = () => {
         padding: "20px", // Space around the coconut
       }}
     >
-      <img
+      {/* <img
         src={coconut} // Your coconut image path
         alt="coconut"
         style={{
@@ -25,7 +26,7 @@ const Header = () => {
           display: "block",
           margin: "0 auto", // Center the coconut
         }}
-      />
+      /> */}
     </div>
   );
 };

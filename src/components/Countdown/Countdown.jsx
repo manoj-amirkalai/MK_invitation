@@ -26,7 +26,8 @@ const Countdown = () => {
   }
     function CountdownUnit({ value, label }) {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center" ,
+        minHeight: '90vh',}}>
         <p
           style={{
             fontWeight: 500,
