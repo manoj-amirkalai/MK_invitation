@@ -18,15 +18,19 @@ const Header = () => {
         padding: "20px", // Space around the coconut
       }}
     >
-      {/* <img
+       <img
         src={coconut} // Your coconut image path
         alt="coconut"
         style={{
-          width: "50%", // Coconut size relative to the div
+          position: "absolute",
+          top: 400,
+          left: 250,
+                    transform: "translate(-50%, -50%)", // Center the coconut
+          width: "10%", // Coconut size relative to the div
           display: "block",
           margin: "0 auto", // Center the coconut
         }}
-      /> */}
+      /> 
     </div>
   );
 };
