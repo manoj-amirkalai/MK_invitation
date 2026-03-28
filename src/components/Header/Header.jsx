@@ -2,6 +2,8 @@ import React from "react";
 import PILLAR_B64 from "../../assets/templebg.avif";
 import "./Header.css";
 import coconut from "../../assets/coconut.png";
+import leftFlower from "../../assets/coconut.png";
+import rightFlower from "../../assets/coconut.png";
 
 const Header = () => {
   return (
@@ -23,10 +25,34 @@ const Header = () => {
         alt="coconut"
         style={{
           position: "absolute",
+          top: 0,
+          left: 0,
+          width: '100px', // Coconut size relative to the div
+          display: "block",
+          margin: "0 auto", // Center the coconut
+        }}
+      /> 
+       <img
+        src={coconut} // Your coconut image path
+        alt="coconut"
+        style={{
+          position: "absolute",
+          top: 0,
+          right : 0,
+          width: '100px', // Coconut size relative to the div
+          display: "block",
+          margin: "0 auto", // Center the coconut
+        }}
+      /> 
+       <img
+        src={coconut} // Your coconut image path
+        alt="coconut"
+        style={{
+          position: "absolute",
           top: 400,
           left: 250,
-                    transform: "translate(-50%, -50%)", // Center the coconut
-          width: "10%", // Coconut size relative to the div
+          transform: "translate(-50%, -50%)", // Center the coconut
+          width: '100px', // Coconut size relative to the div
           display: "block",
           margin: "0 auto", // Center the coconut
         }}
