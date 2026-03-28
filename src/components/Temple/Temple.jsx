@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PILLAR_B64 from "../../assets/templebg.avif";
 import TEMPLE_B64 from "../../assets/temple3d.png";
-import templeBg from "../../assets/templebg.avif";
+import templeBg from "../../assets/templebgcrop.jpg";
 
 
 
@@ -41,8 +41,12 @@ export default function Temple() {
           overflow: "hidden",
           zIndex: 10,
           backgroundImage: `url(${templeBg})`,
-          backgroundPosition: "center",
-          marginBottom: `-${HEADER_H+55}px`, // PULLS content up to align with sticky
+          backgroundPosition: "end",
+          marginBottom: `-${HEADER_H+55}px`,
+          backgroundImage: `url(${templeBg})`,
+          backgroundPosition: "bottom center", // Anchors the image to the bottom
+          backgroundSize: "cover",      // Ensures the image fills the area
+          backgroundRepeat: "no-repeat" // PULLS content up to align with sticky
         }}>
           {/* BACKGROUND PILLARS */}
           <div style={{

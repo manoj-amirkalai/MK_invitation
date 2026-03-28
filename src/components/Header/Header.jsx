@@ -8,7 +8,7 @@ const Header = () => {
     <div
       style={{
         width: 440,
-        minHeight: '60vh',// Container width
+        minHeight: '50vh',// Container width
         display: "flex", // Now flex works on the div
         justifyContent: "center", // Centers the coconut
         alignItems: "center",
