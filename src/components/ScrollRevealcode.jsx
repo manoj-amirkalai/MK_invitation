@@ -7,7 +7,7 @@ const ScrollRevealcode = () => {
     const sr = ScrollReveal({
       distance: "200px",
       duration: 700,
-      reset: true,
+      reset: false,
       opacity: 0,
     });
 
@@ -22,6 +22,8 @@ const ScrollRevealcode = () => {
       { selector: "#invitationtitle", origin: "right", delay: 3250},
       { selector: "#thirukural", origin: "left", delay: 3750},
       { selector: "#wedname", origin: "right", delay: 4250},
+      { selector: "#rightbanana", origin: "left", delay: 4750},
+      { selector: "#leftbanana", origin: "left", delay: 4750},
     ];
 
     // 3. Map through and reveal

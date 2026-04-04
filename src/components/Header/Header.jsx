@@ -253,6 +253,35 @@ const Header = () => {
           borderRadius: "10px",
         }}
       >
+        <img
+        src={banana}
+        alt="right-banana"
+        id="rightbanana" // Matches your ScrollReveal ID
+        style={{
+          position: "absolute",
+          bottom: 0, 
+          top : -2,      // Pinned to bottom
+         right: -70,        // Pinned to right end
+          height: "155px", // Adjust height as needed
+          width: "auto",
+          transform: "scaleX(-1)", // Flips the image so it faces inward
+          zIndex: 1,
+        }}
+      />
+      <img
+        src={banana}
+        alt="right-banana"
+        id="leftbanana" // Matches your ScrollReveal ID
+        style={{
+          position: "absolute",
+          bottom: 0,   
+          top : -2,        // Pinned to bottom
+          left: -70,        // Pinned to right end
+          height: "155px", // Adjust height as needed
+          width: "auto",// Flips the image so it faces inward
+          zIndex: 1,
+        }}
+      />
         <div
           style={{
             fontSize: "1.5rem",
