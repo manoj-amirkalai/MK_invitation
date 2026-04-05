@@ -6,7 +6,7 @@ import leftFlower from "../../assets/lampbg.png";
 import rightFlower from "../../assets/coconut.png";
 import marraige from "../../assets/headercouple.png";
 import banana from "../../assets/banana.png";
-import TextType from "../WordType/TextType";
+import TextType from "../css/WordType/TextType";
 import ScrollRevealcode from "../ScrollRevealcode";
 
 const glassBase = {

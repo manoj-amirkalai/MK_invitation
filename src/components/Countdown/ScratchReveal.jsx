@@ -74,7 +74,8 @@ const ScratchCircle = ({ size = 150, coverImage, label }) => {
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)",
         background: "white",
-        border: "1px solid rgba(92,94,8,0.3)"
+        border: "1px solid rgba(92,94,8,0.3)",
+          boxShadow: "1px 1px 5px rgb(2, 2, 2)",
       }}
     >
       {label}

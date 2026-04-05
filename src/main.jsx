@@ -22,6 +22,7 @@ createRoot(document.getElementById("root")).render(
       <Header/>
       <Temple />
       <Countdown/>
+      
     </div>
   </StrictMode>,
 );

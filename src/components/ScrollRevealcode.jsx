@@ -7,7 +7,7 @@ const ScrollRevealcode = () => {
     const sr = ScrollReveal({
       distance: "200px",
       duration: 700,
-      reset: false,
+      reset: true,
       opacity: 0,
     });
 
@@ -17,13 +17,12 @@ const ScrollRevealcode = () => {
       { selector: "#rightflower", origin: "left", delay: 750 },
       { selector: "#vinayagar", origin: "bottom", delay: 1250 },
       { selector: "#temple", origin: "bottom", delay: 1750},
-      { selector: "#marraige", origin: "bottom", delay: 2250},
-      { selector: "#ohm", origin: "left", delay: 2750},
-      { selector: "#invitationtitle", origin: "right", delay: 3250},
-      { selector: "#thirukural", origin: "left", delay: 3750},
-      { selector: "#wedname", origin: "right", delay: 4250},
-      { selector: "#rightbanana", origin: "left", delay: 4750},
-      { selector: "#leftbanana", origin: "left", delay: 4750},
+      { selector: "#ohm", origin: "left", delay: 2250},
+      { selector: "#invitationtitle", origin: "right", delay: 2750},
+      { selector: "#thirukural", origin: "left", delay: 3250},
+      { selector: "#wedname", origin: "right", delay: 3750},
+      { selector: "#rightbanana", origin: "left", delay: 4250},
+      { selector: "#leftbanana", origin: "left", delay: 4250},
     ];
 
     // 3. Map through and reveal

@@ -1,6 +1,6 @@
 
 import data from "../../manifest.json";
-import scratchImg from "../../assets/scratch.png";
+import scratchImg from "../../assets/ribbon.jpg";
 import ScratchCircle from "./ScratchReveal";
 
 function WeddingDate() {
@@ -17,7 +17,7 @@ function WeddingDate() {
         display: "flex",
         gap: "20px",
         justifyContent: "center",
-        marginTop: "20px"
+        marginTop: "0px"
       }}
     >
       <ScratchCircle
