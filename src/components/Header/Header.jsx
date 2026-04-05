@@ -2,7 +2,7 @@ import React from "react";
 import PILLAR_B64 from "../../assets/templebg.avif";
 import "./Header.css";
 import vinayagar from "../../assets/vinayagar.png";
-import leftFlower from "../../assets/left.webp";
+import leftFlower from "../../assets/lampbg.png";
 import rightFlower from "../../assets/coconut.png";
 import marraige from "../../assets/headercouple.png";
 import banana from "../../assets/banana.png";
@@ -37,16 +37,16 @@ const Header = () => {
       }}
     >
       <ScrollRevealcode />
-      {/* <img
+      <img
         src={leftFlower} // Your coconut image path
         alt="leftFlower"
         id="leftflower"
         style={{
           position: "absolute",
           top: 0,
-          left: -30,
-          width: '200px', // Coconut size relative to the div
-          height: '200px', // Coconut size relative to the div
+          left: 0,
+          width: '100px', // Coconut size relative to the div
+          height: '100px', // Coconut size relative to the div
           display: "block",
           margin: "0 auto", // Center the coconut
         }}
@@ -58,14 +58,14 @@ const Header = () => {
         style={{
           position: "absolute",
           top: 0,
-          right : -30,
-          width: '200px', // Coconut size relative to the div
-          height: '200px', // Coconut size relative to the div
+          right : 0,
+          width: '100px', // Coconut size relative to the div
+          height: '100px', // Coconut size relative to the div
           display: "block",
           transform: "scaleX(-1)", // Flip the image horizontally
           margin: "0 auto", // Center the coconut
         }}
-      />  */}
+      /> 
       {/* <img
         src={marraige} // Your coconut image path
         alt="marraige"
@@ -106,7 +106,7 @@ const Header = () => {
             fontWeight: "700",
             letterSpacing: "1px",
             display: "block",
-            textShadow: "0 1px 8px rgba(255,255,255,0.7)",
+            textShadow: "0 1px 8px rgb(254, 255, 253)",
           }}
         >
           ॐ
@@ -120,9 +120,9 @@ const Header = () => {
           ...glassBase,
           position: "absolute",
           top: "215px",
-          left: "50%",
+          left: "52%",
           transform: "translateX(-50%)",
-          padding: "5px 28px 5px 28px",
+          padding: "5px 15px 5px 15px",
           zIndex: 10,
           whiteSpace: "nowrap",
           borderRadius: "10px",
@@ -136,10 +136,10 @@ const Header = () => {
             textAlign: "center",
             fontWeight: "800",
             letterSpacing: "1px",
-            textShadow: "0 1px 10px rgba(255,255,255,0.6)",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
           }}
         >
-          திருமண அழைப்பிதழ்
+          திருமண   அழைப்பிதழ்
         </h1>
       </div>
 
@@ -169,7 +169,7 @@ const Header = () => {
             fontSize: "0.85rem",
             fontWeight: "600",
             textAlign: "center",
-            textShadow: "0 1px 6px rgba(255,255,255,0.5)",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
             lineHeight: "1.6",
           }}
         >
@@ -182,7 +182,7 @@ const Header = () => {
             fontSize: "0.85rem",
             fontWeight: "600",
             textAlign: "center",
-            textShadow: "0 1px 6px rgba(255,255,255,0.5)",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
             lineHeight: "1.6",
           }}
         >
@@ -212,6 +212,7 @@ const Header = () => {
               textAlign: "center",
               fontStyle: "italic",
               letterSpacing: "0.5px",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
             }}
           >
             {data}
@@ -288,6 +289,7 @@ const Header = () => {
             fontWeight: "700",
             letterSpacing: "-1px",
             color: "#800000",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
           }}
         >
           <TextType
@@ -346,6 +348,7 @@ const Header = () => {
             fontWeight: "700",
             letterSpacing: "-1px",
             color: "#800000",
+            textShadow: "0 1px 8px rgb(148, 134, 6)",
           }}
         >
           <TextType
