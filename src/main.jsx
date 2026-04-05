@@ -5,6 +5,7 @@ import Temple from "./components/Temple/Temple";
 import Countdown from "./components/Countdown/Countdown";
 import Header from "./components/Header/Header";
 import "./main.css";
+import DomeGallery from "./components/css/DomeGallery/DomeGallery";
 
 const style = {
   width: 480,
@@ -19,10 +20,19 @@ const style = {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div style={style}>
-      <Header/>
+      <Header />
       <Temple />
-      <Countdown/>
-      
+      <Countdown />
+      <div style={{ width: 480, height: "50vh" }}>
+      <DomeGallery
+  fit={0.8}
+  minRadius={600}
+  maxVerticalRotationDeg={0}
+  segments={34}
+  dragDampening={2}
+  grayscale={false}
+/>
+      </div>
     </div>
   </StrictMode>,
 );
