@@ -7,7 +7,7 @@ const ScrollRevealcode = () => {
     const sr = ScrollReveal({
       distance: "80px",
       duration: 700,
-      reset: true,
+      reset: false,
       opacity: 0,
     });
 
@@ -24,8 +24,8 @@ const ScrollRevealcode = () => {
       { selector: "#wedname", origin: "right", delay: 3750 },
       { selector: "#rightbanana", origin: "left", delay: 4250 },
       { selector: "#leftbanana", origin: "left", delay: 4250 },
-      // gallery
-      { selector: "#gallery", origin: "bottom", delay: 50 },
+      // banner
+      { selector: "#banner", origin: "bottom", delay: 2250 },
       // countdown
       { selector: "#countdownHeader", origin: "bottom", delay: 250 },
       { selector: "#daycount", origin: "left", delay: 750 },
