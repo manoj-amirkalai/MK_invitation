@@ -132,6 +132,26 @@ const Countdown = () => {
       </p>
 
       <WeddingDateReveal />
+      <p style={{  // Typography
+          fontStyle: "oblique",
+          fontWeight: 700,
+          fontSize: "15px", // Added 'px' for best practice in strings
+          lineHeight: "100.1%",
+          color: "white",
+          textAlign: "center",
+          textShadow: "2px 2px 5px rgb(10, 10, 10)",
+
+          // Glassmorphism Effect
+          background: "rgba(255, 255, 255, 0.1)",
+          backdropFilter: "blur(1px)", // Matched to Webkit for consistency
+          WebkitBackdropFilter: "blur(1px)",
+          border: "1px solid rgba(255, 255, 255, 0.2)",
+          borderRadius: "10px",
+
+          // Layout
+          padding: "10px",
+          width: "max-content",
+          maxWidth: "800px",}}>Scratch to reveal the date.</p>
       {/* Timer */}
       <div style={{ display: "flex", gap: 6 }}>
         <div id="daycount">
