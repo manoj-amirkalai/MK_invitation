@@ -132,7 +132,7 @@ const Countdown = () => {
       </p>
 
       <WeddingDateReveal />
-      <p style={{  // Typography
+      <p id="scratchtoreveal" style={{  // Typography
           fontStyle: "oblique",
           fontWeight: 700,
           fontSize: "15px", // Added 'px' for best practice in strings
