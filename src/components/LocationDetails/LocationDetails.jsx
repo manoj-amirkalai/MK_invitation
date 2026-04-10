@@ -36,7 +36,7 @@ const LocationDetails = () => {
             <h3 id='eventtitle'>{item.day}</h3>
             <p className="dateText" id='dateText'>{item.date}</p>
             <p className="timeText" id='timeText'>{item.time}</p>
-            <hr className="divider" />
+            {/* <hr className="divider" /> */}
             <p className="venueText" id='venueText'>{item.venue}</p>
             <a id='mapbutton' href={item.link} target="_blank" rel="noopener noreferrer">
             <button id='mapbutton' className="mapButton">View on Maps</button></a>
