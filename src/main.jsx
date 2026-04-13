@@ -73,7 +73,7 @@ function App() {
 
   return (
     <StrictMode>
-      <Loader isLoading={isLoading} />
+     {isLoading ? <Loader isLoading={isLoading} /> :
       <div style={style}>
         <Header />
         <Temple />
@@ -90,7 +90,7 @@ function App() {
         </div>
         <LocationDetails />
         <WeddingFooter />
-      </div>
+      </div>}
     </StrictMode>
   );
 }
