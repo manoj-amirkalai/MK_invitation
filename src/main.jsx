@@ -12,52 +12,36 @@ import WeddingFooter from "./components/WeddingFooter/WeddingFooter";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [loadProgress, setLoadProgress] = useState(0); // Track real percentage
 
   useEffect(() => {
-    const handlePageLoad = () => {
-      // Wait for all images to load
       const images = document.querySelectorAll("img");
+    const totalImages = images.length;
       
-      if (images.length === 0) {
-        // No images found, hide loader immediately
-        setIsLoading(false);
-        return;
+    if (totalImages === 0) {
+      setLoadProgress(100);
+      setIsLoading(false);
+      return;
       }
 
       let imagesLoaded = 0;
-      
-      images.forEach((img) => {
-        if (img.complete) {
+    const updateProgress = () => {
           imagesLoaded++;
-        } else {
-          img.addEventListener("load", () => {
-            imagesLoaded++;
-            if (imagesLoaded === images.length) {
-              setIsLoading(false);
-            }
-          });
-          img.addEventListener("error", () => {
-            imagesLoaded++;
-            if (imagesLoaded === images.length) {
-              setIsLoading(false);
-            }
-          });
-        }
-      });
-
-      // If all images are already loaded
-      if (imagesLoaded === images.length) {
-        setIsLoading(false);
+      const percent = Math.floor((imagesLoaded / totalImages) * 100);
+      setLoadProgress(percent);
+      if (imagesLoaded === totalImages) {
+        setTimeout(() => setIsLoading(false), 500); // Slight delay for smooth exit
       }
     };
 
-    // Hide loader when DOM is ready
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", handlePageLoad);
-      return () => document.removeEventListener("DOMContentLoaded", handlePageLoad);
+    images.forEach((img) => {
+      if (img.complete) {
+        updateProgress();
     } else {
-      handlePageLoad();
+        img.addEventListener("load", updateProgress);
+        img.addEventListener("error", updateProgress);
     }
+    });
   }, []);
 
   const style = {
