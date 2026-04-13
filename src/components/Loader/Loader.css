@@ -1,16 +1,17 @@
+/* Background with a warmer, festive gradient */
 .loader-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1a0000 0%, #3d0000 100%);
+  background: radial-gradient(circle, #ff9933 0%, #d4145a 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  overflow: hidden;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .loader-container.hidden {
@@ -18,44 +19,202 @@
   visibility: hidden;
 }
 
+/* Vibrating Wedding Name */
+.couple-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 38px;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 3px 3px 0px #b00000;
+  margin-bottom: 0px;
+  animation: celebrate 1s ease-in-out infinite alternate;
+}
+
+@keyframes celebrate {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+/* Celebration Row (Drums & Spinner) */
+.celebration-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.instrument {
+  font-size: 40px;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+.drum {
+  animation: drumBeat 0.4s infinite alternate;
+}
+
+.nadaswaram {
+  animation: trumpetSway 1s infinite ease-in-out;
+}
+
+@keyframes drumBeat {
+  0% { transform: rotate(-10deg) scale(1); }
+  100% { transform: rotate(10deg) scale(1.2); }
+}
+
+@keyframes trumpetSway {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* Central Rotating Flower Spinner */
+.main-spinner {
+  width: 100px;
+  height: 100px;
+  border: 6px dashed #ffd700;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 4s linear infinite;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.inner-flower {
+  font-size: 50px;
+  animation: spin 3s linear infinite reverse;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Falling Flowers Animation */
+.flower-rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.falling-flower {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+/* Randomize positions for falling flowers */
+.falling-flower:nth-child(odd) { animation-duration: 3s; animation-delay: 0.5s; left: 15%; }
+.falling-flower:nth-child(even) { animation-duration: 4s; animation-delay: 0.5s; left: 80%; }
+.falling-flower:nth-child(3n) { animation-duration: 4s; left: 45%; }
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* Text Styling */
+.text-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader-text {
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.loader-subtitle {
+  color: #ffd700;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Layout for the main content wrapper */
 .loader-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 0px; /* Space between name, instruments, and text */
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 20px;
 }
 
-.spinner {
-  width: 60px;
-  height: 60px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
-  border-top-color: #d4af37;
-  border-right-color: #d4af37;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+/* Optional: Smooth entry for the content */
+.loader-content {
+  animation: contentFadeIn 1s ease-out;
 }
 
-@keyframes spin {
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
-    transform: rotate(360deg);
-  }
-}
-
-.loader-text {
-  color: #d4af37;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 0;
-  animation: fadeInOut 1.5s ease-in-out infinite;
-}
-
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0.7;
-  }
-  50% {
     opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* Container to center and space the progress elements */
+.progress-section {
+  width: 280px; /* Slightly wider for better mobile visibility */
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* The outer track of the bar */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white track */
+  border-radius: 20px;
+  padding: 3px; /* Creates a nice inset look */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.4); /* Subtle gold border */
+}
+
+/* The actual moving fill */
+.progress-bar-fill {
+  height: 100%;
+  /* Festive Gradient: Turmeric Yellow to Bright White */
+  background: linear-gradient(90deg, #ffcc33, #ffffff, #ffcc33);
+  background-size: 200% 100%;
+  border-radius: 20px;
+  
+  /* Smooth movement as percentage updates */
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Glowing effect */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  
+  /* Shimmer animation to make it feel "alive" while loading */
+  animation: shimmer 2s infinite linear;
+}
+
+/* Percentage Number Styling */
+.percentage-text {
+  font-family: 'Cinzel', serif; /* Matching your wedding font */
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.5);
+  margin: 0;
+}
+
+/* Animated shimmer effect for the bar fill */
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
