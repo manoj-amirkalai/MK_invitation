@@ -41,12 +41,10 @@ export default function Temple() {
           overflow: "hidden",
           zIndex: 10,
           backgroundImage: `url(${templeBg})`,
-          backgroundPosition: "end",
-          marginBottom: `-${HEADER_H+55}px`,
-          backgroundImage: `url(${templeBg})`,
           backgroundPosition: "bottom center", // Anchors the image to the bottom
           backgroundSize: "cover",      // Ensures the image fills the area
-          backgroundRepeat: "no-repeat" // PULLS content up to align with sticky
+          backgroundRepeat: "no-repeat", // PULLS content up to align with sticky
+          marginBottom: `-${HEADER_H+55}px`
         }}>
           {/* BACKGROUND PILLARS */}
           <div style={{
