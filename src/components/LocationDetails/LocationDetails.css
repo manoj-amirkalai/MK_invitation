@@ -2,7 +2,7 @@
         color: white;
         min-height: 50vh;
         width: 100%;
-        background-image: url('../../assets/weddingbg.png');
+        background-image: url('../../assets/webp/weddingbg.webp');
         
         /* Centering Logic */
         background-position: center; 
@@ -22,7 +22,7 @@
         -webkit-backdrop-filter: blur(10px);    /* For Safari support */
         
         /* Background setup */
-        background-image: url('../../assets/weddingbg.png');
+        background-image: url('../../assets/webp/weddingbg.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -47,7 +47,7 @@
     }
 
     .glassCard {/* The Glassmorphism Effect */
-background-image: url('../../assets/invitecardBg.png');
+background-image: url('../../assets/webp/invitecardBg.webp');
 background-position: -150px -100px;
 background-repeat: no-repeat;
 background-size: 185%; /* Ensures the image fills the container */

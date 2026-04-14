@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import data from "../../manifest.json";
 import WeddingDateReveal from "../Countdown/WeddingDateReveal";
 // import inviteBg from "../../assets/invitaionbg.avif";
-import inviteBg from "../../assets/wedding1.png";
+import inviteBg from "../../assets/webp/wedding1.webp";
 
 const Countdown = () => {
   const countdown = useCountdown(new Date(data.date).getTime());
