@@ -15,7 +15,7 @@ function App() {
   const [loadProgress, setLoadProgress] = useState(0); // Track real percentage
 
   useEffect(() => {
-    const imageElements = Array.from(document.querySelectorAll("img"));
+    const imageElements = Array.from(document.querySelectorAll("img:not(#gallery)"));
     const backgroundUrls = new Set();
 
     const backgroundCandidates = Array.from(document.querySelectorAll("*"));
