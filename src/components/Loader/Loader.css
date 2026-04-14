@@ -151,7 +151,7 @@
 
 /* Rotating Logo */
 .logo {
-  animation: rotateInfinite 10s linear infinite;
+  animation: rotateInfinite 30s linear infinite;
   margin-bottom: 25px;
 }
 
