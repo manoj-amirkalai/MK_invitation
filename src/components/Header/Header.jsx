@@ -1,13 +1,9 @@
 import React from "react";
-import PILLAR_B64 from "../../assets/templebg.avif";
+import PILLAR_B64 from "../../assets/avif/templebg.avif";
 import "./Header.css";
-import vinayagar from "../../assets/vinayagar.png";
-import leftFlower from "../../assets/lampbg.png";
-import rightFlower from "../../assets/coconut.png";
-import marraige from "../../assets/headercouple.png";
-import banana from "../../assets/banana.png";
-import TextType from "../css/WordType/TextType";
-import banner from "../../assets/bannerCardImage.png";
+import vinayagar from "../../assets/webp/vinayagar.webp";
+import leftFlower from "../../assets/png/lampbg.png";
+import banner from "../../assets/webp/bannerCardImage.webp";
 import ScrollRevealcode from "../ScrollRevealcode";
 
 const glassBase = {

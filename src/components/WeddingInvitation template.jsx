@@ -6,7 +6,7 @@ import WeddingDateReveal from "./Countdown/WeddingDateReveal";
 import data from "../public/manifest.json";
 import audio_bgm from "../src/assets/TheriLoveBgm.mp3";
 import templeImgbg from "../src/assets/templebg.avif";
-import temple3dImg from "../src/assets/temple3d.png";
+import temple3dImg from "../src/assets/temple3d.webp";
 import Temple from "./Temple/Temple";
 
 // ─── Image & Asset URLs (from original HTML) ─────────────────────────────────
