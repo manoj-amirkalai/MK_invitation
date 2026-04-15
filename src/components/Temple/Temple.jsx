@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import PILLAR_B64 from "../../assets/avif/templebg.avif";
-import TEMPLE_B64 from "../../assets/webp/temple3d.webp";
-import templeBg from "../../assets/jpg/templebgcrop.jpg";
+import PILLAR_B64 from "/assets/avif/templebg.avif";
+import TEMPLE_B64 from "/assets/webp/temple3d.webp";
+import templeBg from "/assets/jpg/templebgcrop.jpg";
 
 
 

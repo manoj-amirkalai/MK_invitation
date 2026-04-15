@@ -1,9 +1,9 @@
 import React from "react";
-import PILLAR_B64 from "../../assets/avif/templebg.avif";
+import PILLAR_B64 from "/assets/avif/templebg.avif";
 import "./Header.css";
-import vinayagar from "../../assets/webp/vinayagar.webp";
-import leftFlower from "../../assets/png/lampbg.png";
-import banner from "../../assets/webp/bannerCardImage.webp";
+import vinayagar from "/assets/webp/vinayagar.webp";
+import leftFlower from "/assets/png/lampbg.png";
+import banner from "/assets/webp/bannerCardImage.webp";
 import ScrollRevealcode from "../ScrollRevealcode";
 
 const glassBase = {

@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../assets/jpg/bananaleaf.jpg');
+  background-image: url("/assets/jpg/bananaleaf.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -23,17 +23,23 @@
 
 /* Vibrating Wedding Name */
 .couple-name {
-  font-family: 'Cinzel Decorative', serif;
+  font-family: "Cinzel Decorative", serif;
   font-size: 38px;
   color: #fff;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 3px 3px 0px #b00000;
+  text-shadow:
+    0 0 15px rgba(255, 255, 255, 0.6),
+    3px 3px 0px #b00000;
   margin-bottom: 0px;
   animation: celebrate 1s ease-in-out infinite alternate;
 }
 
 @keyframes celebrate {
-  from { transform: scale(1); }
-  to { transform: scale(1.05); }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
 /* Celebration Row (Drums & Spinner) */
@@ -46,7 +52,7 @@
 
 .instrument {
   font-size: 40px;
-  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 .drum {
@@ -58,13 +64,22 @@
 }
 
 @keyframes drumBeat {
-  0% { transform: rotate(-10deg) scale(1); }
-  100% { transform: rotate(10deg) scale(1.2); }
+  0% {
+    transform: rotate(-10deg) scale(1);
+  }
+  100% {
+    transform: rotate(10deg) scale(1.2);
+  }
 }
 
 @keyframes trumpetSway {
-  0%, 100% { transform: translateY(0) rotate(-5deg); }
-  50% { transform: translateY(-10px) rotate(5deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
 }
 
 /* Central Rotating Flower Spinner */
@@ -86,7 +101,9 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Falling Flowers Animation */
@@ -106,9 +123,20 @@
 }
 
 /* Randomize positions for falling flowers */
-.falling-flower:nth-child(odd) { animation-duration: 3s; animation-delay: 0.5s; left: 15%; }
-.falling-flower:nth-child(even) { animation-duration: 4s; animation-delay: 0.5s; left: 80%; }
-.falling-flower:nth-child(3n) { animation-duration: 4s; left: 45%; }
+.falling-flower:nth-child(odd) {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  left: 15%;
+}
+.falling-flower:nth-child(even) {
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  left: 80%;
+}
+.falling-flower:nth-child(3n) {
+  animation-duration: 4s;
+  left: 45%;
+}
 
 @keyframes fall {
   to {
@@ -124,7 +152,7 @@
 
 .loader-text {
   color: #fff;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 22px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -160,8 +188,12 @@
 }
 
 @keyframes rotateInfinite {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .loader-content {
   animation: contentFadeIn 1s ease-out;
@@ -206,31 +238,37 @@
   background: linear-gradient(90deg, #ffcc33, #ffffff, #ffcc33);
   background-size: 200% 100%;
   border-radius: 20px;
-  
+
   /* Smooth movement as percentage updates */
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   /* Glowing effect */
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-  
+
   /* Shimmer animation to make it feel "alive" while loading */
   animation: shimmer 2s infinite linear;
 }
 
 /* Percentage Number Styling */
 .percentage-text {
-  font-family: 'Cinzel', serif; /* Matching your wedding font */
+  font-family: "Cinzel", serif; /* Matching your wedding font */
   color: #eee2b9;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.5);
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 0 10px rgba(255, 215, 0, 0.5);
   margin: 0;
   backdrop-filter: blur(5px);
 }
 
 /* Animated shimmer effect for the bar fill */
 @keyframes shimmer {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
 }

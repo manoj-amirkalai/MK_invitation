@@ -1,5 +1,5 @@
 import data from "../../manifest.json";
-import scratchImg from "../../assets/jpg/ribbon.jpg";
+import scratchImg from "/assets/jpg/ribbon.jpg";
 import ScratchCircle from "./ScratchReveal";
 
 function WeddingDate() {

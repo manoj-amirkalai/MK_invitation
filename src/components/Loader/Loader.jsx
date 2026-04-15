@@ -1,7 +1,7 @@
 // src/components/Loader/Loader.jsx
 import "./Loader.css";
-import loader from "../../assets/webp/loader.webp";
-import logo from "../../assets/webp/logo.webp";
+import loader from "/assets/webp/loader.webp";
+import logo from "/assets/webp/logo.webp";
 
 export default function Loader({ isLoading, realProgress = 0 }) {
   return (

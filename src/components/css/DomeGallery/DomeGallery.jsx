@@ -1,19 +1,19 @@
 import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
 import "./DomeGallery.css";
-import image2 from '../../../assets/gallery/image (2).png';
-import image3 from '../../../assets/gallery/image (3).png';
-import image4 from '../../../assets/gallery/image (4).png';
-import image5 from '../../../assets/gallery/image (5).png';
-import image6 from '../../../assets/gallery/image (6).png';
-import image7 from '../../../assets/gallery/image (7).png';
-import image8 from '../../../assets/gallery/image (8).png';
-import image9 from '../../../assets/gallery/image (9).png';
-import image10 from '../../../assets/gallery/image (10).png';
-import image11 from '../../../assets/gallery/image (11).png';
-import image12 from '../../../assets/gallery/image (12).png';
-import image13 from '../../../assets/gallery/image (13).png';
-import image14 from '../../../assets/gallery/image (14).jpg';
+import image2 from '/assets/gallery/image (2).png';
+import image3 from '/assets/gallery/image (3).png';
+import image4 from '/assets/gallery/image (4).png';
+import image5 from '/assets/gallery/image (5).png';
+import image6 from '/assets/gallery/image (6).png';
+import image7 from '/assets/gallery/image (7).png';
+import image8 from '/assets/gallery/image (8).png';
+import image9 from '/assets/gallery/image (9).png';
+import image10 from '/assets/gallery/image (10).png';
+import image11 from '/assets/gallery/image (11).png';
+import image12 from '/assets/gallery/image (12).png';
+import image13 from '/assets/gallery/image (13).png';
+import image14 from '/assets/gallery/image (14).jpg';
 
 // Function to convert single URL
 const getOptimizedUrl = (url) => {

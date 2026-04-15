@@ -1,105 +1,116 @@
-    .locationContainer{gap: 20px;
-        color: white;
-        min-height: 50vh;
-        width: 100%;
-        background-image: url('../../assets/webp/weddingbg.webp');
-        
-        /* Centering Logic */
-        background-position: center; 
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.locationContainer {
+  gap: 20px;
+  color: white;
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("/assets/webp/weddingbg.webp");
 
-    .locationContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        padding: 60px 20px;
-        min-height: 70vh;
-        width: 91.5%;
-        -webkit-backdrop-filter: blur(10px);    /* For Safari support */
-        
-        /* Background setup */
-        background-image: url('../../assets/webp/weddingbg.webp');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  /* Centering Logic */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .locationTitle {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgb(0, 0, 0);
-        color: #ffd700; /* Gold accent for the title */
-        backdrop-filter: blur(1px);           /* The blur effect */
-        border-radius: 10px;
-        padding: 0 5px;
-        margin-top: -40px;
-    }
+.locationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  min-height: 70vh;
+  width: 91.5%;
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
 
-    .scheduleGrid {
-        display: grid;
-        justify-content: center;
-        width: 100%;
-        max-width: 1000px;
-    }
+  /* Background setup */
+  background-image: url("/assets/webp/weddingbg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .glassCard {/* The Glassmorphism Effect */
-background-image: url('../../assets/webp/invitecardBg.webp');
-background-position: -150px -100px;
-background-repeat: no-repeat;
-background-size: 185%; /* Ensures the image fills the container */
+.locationTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  color: #ffd700; /* Gold accent for the title */
+  backdrop-filter: blur(1px); /* The blur effect */
+  border-radius: 10px;
+  padding: 0 5px;
+  margin-top: -40px;
+}
 
-/* Add a semi-transparent background color to create the 'glass' tint */
-background-color: rgba(255, 255, 255, 0.1); 
+.scheduleGrid {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
 
-backdrop-filter: blur(10px); /* Increased from 1px for a true glass look */
--webkit-backdrop-filter: blur(10px);
+.glassCard {
+  /* The Glassmorphism Effect */
+  background-image: url("/assets/webp/invitecardBg.webp");
+  background-position: -150px -100px;
+  background-repeat: no-repeat;
+  background-size: 185%; /* Ensures the image fills the container */
 
-border: 1px solid rgba(255, 255, 255, 0.2);
-border-radius: 20px;
-padding: 30px;
-width: 350px;
-text-align: center;
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.986);
-font-weight: 700;
-margin-top: -80px;
-transform: scale(0.7);
-    }
+  /* Add a semi-transparent background color to create the 'glass' tint */
+  background-color: rgba(255, 255, 255, 0.1);
 
-    .glassCard h3 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-        color: #ffd700; /* Gold accent for the title */
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.986);
-    }
+  backdrop-filter: blur(10px); /* Increased from 1px for a true glass look */
+  -webkit-backdrop-filter: blur(10px);
 
-    .dateText { font-weight: bold; margin-bottom: 5px; font-size: 20px;}
-    .timeText { font-style: italic; opacity: 1; font-size: 20px;}
-    .venueText{ font-size: 20px;}
-    .divider {
-        margin: 20px auto;
-        width: 50%;
-        border: 0;
-        border-top: 1px solid rgba(255,255,255,0.3);
-    }
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.986);
+  font-weight: 700;
+  margin-top: -80px;
+  transform: scale(0.7);
+}
 
-    .mapButton {
-        margin-top: 15px;
-        padding: 10px 20px;
-        border-radius: 25px;
-        border: none;
-        background: white;
-        color: #333;
-        font-weight: bold;
-        cursor: pointer;
-        transition: transform 0.2s;
-    }
+.glassCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffd700; /* Gold accent for the title */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.986);
+}
 
-    .mapButton:hover {
-        transform: scale(1.05);
-    }
+.dateText {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.timeText {
+  font-style: italic;
+  opacity: 1;
+  font-size: 20px;
+}
+.venueText {
+  font-size: 20px;
+}
+.divider {
+  margin: 20px auto;
+  width: 50%;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
 
+.mapButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mapButton:hover {
+  transform: scale(1.05);
+}
