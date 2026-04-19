@@ -312,9 +312,24 @@ export default function DomeGallery({
     openedImageWidth,
     openedImageHeight,
   ]);
-
+  // Allow normal scrolling behavior
   useEffect(() => {
-    applyTransform(rotationRef.current.x, rotationRef.current.y);
+    const main = mainRef.current;
+    if (!main) return;
+
+    const handleWheel = (e) => {
+      // Allow default scrolling behavior - don't prevent it
+      // Only prevent if we're in the middle of a drag operation
+      if (draggingRef.current) {
+        e.preventDefault();
+      }
+    };
+
+    main.addEventListener('wheel', handleWheel, { passive: false });
+    
+    return () => {
+      main.removeEventListener('wheel', handleWheel);
+    };
   }, []);
 
   const stopInertia = useCallback(() => {
